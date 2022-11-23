@@ -12,7 +12,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 Clone the project [GitHubProject](https://github.com/khaywood2019/tutorApp.git)
 
-Once the project is cloned, you can open it up in an editor to view, we used VS Code. To run the project, type "ionic serve" in the terminal. If you want the app to display as it would look on a mobile device, type "ionic serve --lab". 
+Within the TutorApp Folder open the tutors2 folder to access all the files. Once the project is cloned, you can open it up in an editor to view, we used VS Code. To run the project, type "ionic serve" in the terminal. If you want the app to display as it would look on a mobile device, type "ionic serve --lab". 
 
 ## How to Navigate the App
 
