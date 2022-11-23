@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="bg-class">
+    <div class="ion-text-center">
+    <ion-title color="orange"> K-Tutors </ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+ 
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+        
+        <ion-button [routerLink]="['/login']" expand="block" color="orange">Sign In</ion-button>
+        <ion-button [routerLink]="['/registration']" expand="block" color="black">Register Here!</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="logo-container">
+    <img src="../../assets/img/hornetLogo2.png" alt="" class="logo">
+  </div>
+</ion-content>

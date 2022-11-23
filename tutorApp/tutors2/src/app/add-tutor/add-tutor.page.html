@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="bg-class">
+    <div class="logo">
+      <ion-button  shape="circle"  fill="clear" color="transparent" [routerLink]="['/tablinks']">
+      <img src="../../assets/img/hornetLogo2.png" alt="" class="logo">
+    </ion-button>
+    </div>
+    <ion-title class="title">new tutor form </ion-title>
+  
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+  <ion-item>
+    <ion-label color="orange" position="stacked"> full name</ion-label>
+    <ion-input type="text" [(ngModel)]="TutorInfo.Name"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="orange" position="stacked"> email</ion-label>
+    <ion-input type="text" [(ngModel)]="TutorInfo.Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="orange" position="stacked"> Year</ion-label>
+    <ion-input type="text" [(ngModel)]="TutorInfo.Year"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="orange" position="stacked"> subjects that you can tutor</ion-label>
+    <ion-input type="text" [(ngModel)]="TutorInfo.Subjects"></ion-input>
+  </ion-item>
+  </ion-card>
+
+  <ion-button color="orange" expand="block" (click)="saveNewTutor()" >Submit</ion-button>
+</ion-content>

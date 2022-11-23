@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar class="bg-class">
+    <!-- <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> -->
+    <ion-title color="orange">Sign in</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+  <form>    
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item> 
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+  <ion-card padding class="orangeGradient">
+    <ion-row>
+      <ion-col> 
+      <ion-button type="submit" color="secondary" (click)="logIn(email, password)" expand="block">Login</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col> 
+        <!-- <ion-button
+        expand="block"
+        color="warning"
+        [routerLink]="['/tablinks']"
+      >
+      Go to app 
+      </ion-button> -->
+      </ion-col>
+    </ion-row>
+ 
+    <ion-row>
+      <ion-col>
+        <ion-button
+          expand="block"
+          color="black"
+          [routerLink]="['/password-reset']"
+        >
+          Password Reset
+        </ion-button>
+      </ion-col>
+    </ion-row>
+   </ion-card>
+    
+  </form>
+  
+    <img class="logo-container" src="../../assets/img/hornetLogo2.png" alt="" class="logo">
+
+</ion-content>

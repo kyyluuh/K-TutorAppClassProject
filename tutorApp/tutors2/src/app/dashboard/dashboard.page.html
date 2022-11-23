@@ -1,0 +1,80 @@
+
+
+<div class="ion-page">
+  <ion-menu  contentId="main-content">
+    <ion-header class="main-content" >
+      <ion-toolbar class="bg-class" >
+        <ion-title class="back" color="secondary"> menu
+      </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="black" class="ion-padding">
+      <ion-button color="secondary" type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
+      <div class="logo-container">
+        <img src="../../assets/img/hornetLogo2.png" alt="" class="logo2">
+      </div>
+      <ion-text class="buzz">
+   Buzz Buzz say bye!
+</ion-text>
+    </ion-content>
+  
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+   
+  <ion-header>
+    <ion-toolbar class="bg-class">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+     
+      <div class="logo-container">
+        <img src="../../assets/img/hornetLogo2.png" alt="" class="logo">
+      </div>
+  
+      <div class="title"> <p> K-Tutors</p></div> 
+    
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content color="black">
+  
+    <ion-card  class="prof">
+     
+      <div>
+        <h4> The K-Tutors Run Down</h4>
+      
+      </div>
+  
+      <ion-card-content class="ion-text-center">
+        
+        <h2> -Scroll through the dashboard</h2>
+        <br>
+        <h2>-Find a tutor you like </h2>
+        <br>
+        <h2> -Reach out to them VIA email!</h2>
+        <br>
+        <h2> -Fill out the new tutor form if you would like to be a tutor!</h2>
+        <br>
+        <div>
+          <ion-button shape="star"[routerLink]="['/add-tutor']" color="secondary">
+              new tutor form!
+          </ion-button>
+        </div>
+        <h2 background-color="light">#morein4!</h2>
+       
+      </ion-card-content>
+    </ion-card>
+    
+  </ion-content>
+  
+  </div>
+
+
+
+
+
+
+
+
+ 
+

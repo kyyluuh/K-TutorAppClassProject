@@ -1,0 +1,23 @@
+.bg-class{
+    --background: linear-gradient(197deg, rgba(100,100,100,1) 0%, rgba(63,63,63,1) 13.5%, rgba(29,29,29,1) 33.33%, rgba(0,0,0,1) 100%) !important;
+  }
+
+.orangeGradient{
+    --background: linear-gradient(to right, #F53803 0%, #F5D020 100%);
+}
+
+.logo-container
+{
+  display: flex;
+  height: 68vh;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  display: block;
+  width: 60%;
+  height: auto;
+  
+}
