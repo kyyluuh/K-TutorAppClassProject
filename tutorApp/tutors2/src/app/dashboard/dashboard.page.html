@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="black">
+<ion-content color="white">
     <ion-card class="prof">
       <div>
         <ion-button shape="star"[routerLink]="['/add-tutor']" color="light">
@@ -28,6 +28,10 @@
       </ion-card-content>
     </ion-card>
   
-  <ion-button color="orange" type="submit" (click)="authService.SignOut()" expand="block">Logout</ion-button>
 
 </ion-content>
+<ion-footer>
+<div class="back">
+<ion-button type="submit" (click)="authService.SignOut()" color="yellow" expand="block">Logout</ion-button>
+</div>
+</ion-footer>

@@ -1,21 +1,27 @@
 .logo{
-    display: flex;
-    height: 60px;
-    margin-left: 50px;  
-    text-align: center;
-  }
-  .title{
-    color: rgb(247, 122, 19);
-    font-size: small;
-    margin-left: 65.9px;
-    margin-top: -20px;  
-    vertical-align: middle;
-  }
+  margin-left: -5px;
+  height: 55px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.title{
+  margin-left: 12px;
+  color: rgb(247, 122, 19);
+  display: inline-block;
+  font-size: small;
+  vertical-align: middle; 
+}
 .bg-class{
     --background: linear-gradient(197deg, rgba(100,100,100,1) 0%, rgba(63,63,63,1) 13.5%, rgba(29,29,29,1) 33.33%, rgba(0,0,0,1) 100%) !important;
   }
 
-  .orangeGradient{
-    --background: linear-gradient(to right, #F53803 0%, #F5D020 100%);
+  .text{
     color: black;
+}
+
+.orangeGradient{
+  --background: linear-gradient(to right, #F53803 0%, #F5D020 100%);
+}
+ion-content{
+  --background: linear-gradient(to right, #F53803 0%, #F5D020 100%);
 }

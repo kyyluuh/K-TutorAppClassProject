@@ -1,25 +1,21 @@
-<ion-header>
+<ion-header [translucent] = "true">
   <ion-toolbar class="bg-class">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-   
-    <div class="logo-container">
+    <div class="logo">
+      <ion-button  shape="circle"  fill="clear" color="transparent" [routerLink]="['/tablinks/profile']">
       <img src="../../assets/img/hornetLogo2.png" alt="" class="logo">
+    </ion-button>
     </div>
-
-    <div class="title"> <p> K-Tutors</p></div> 
-  
+    <div class="title"> <p> K-tutors</p></div> 
   </ion-toolbar>
 </ion-header>
-<ion-content color = "black" [fullscreen]="true">
+<ion-content color = "white" [fullscreen]="true">
 
   <ion-list>
     
-    <ion-item *ngFor="let Tutor of TutorInfo" color="black">
+    <ion-item *ngFor="let Tutor of TutorInfo" class="orangeGradient">
       
       <label>
-        <ion-card class="orangeGradient">
+        <ion-card class="text">
         <h2>
           {{Tutor.Name}}
         </h2>
